@@ -47,9 +47,9 @@ Framework:
 |--- Job Files (can be implemented by user)
 |       |----- jobs-simple.py (Sample job)
 |       |----- other_job.py
-|--- Job Files
-|--- Job Files
-|--- Job Files
-|--- Job Files
-|--- Job Files
+|--- Command.py (command interface)
+|--- CommandParser.py (module for parsing command)
+|--- JobConsole.py (Command line tool)
+|--- JobDaemon.py (Job Daemon module)
+|--- tester.py (Test file)
 ```
