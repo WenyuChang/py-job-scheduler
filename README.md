@@ -10,8 +10,25 @@ This Python based job scheduler is composed by two parts:
 
 Job daemon
 =====================
+1. Start job daemon:
+`python JobDaemon.py`
 
+2. Stop job daemon:
+`kill <pid>`
+
+3. View job daemon log:
+`tail -f <stdout>`
 
 
 Python based command line tool (CLI)
+==================
+Current supported command:
+
+1. List all job (command: `jobs> listjob`)
+2. List all scheduled job (command: `jobs> listscheduledjob`)
+3. Run job once (command: `jobs> runonce -j <job name>`)
+4. Schedule periodical job (command: `jobs> schedule -j <job name> -i <interval>`)
+5. Un-schedule periodical job (command: `jobs> unschedule -j <job name>`)
+
+Job Scheduler Framework
 ==================
