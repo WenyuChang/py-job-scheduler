@@ -29,6 +29,27 @@ Current supported command:
 3. Run job once (command: `jobs> runonce -j <job name>`)
 4. Schedule periodical job (command: `jobs> schedule -j <job name> -i <interval>`)
 5. Un-schedule periodical job (command: `jobs> unschedule -j <job name>`)
+6. Exit command line tool (command: `jobs> exit`)
+7. Exit command line tool (command: `jobs> quit`)
 
 Job Scheduler Framework
 ==================
+Framework:
+```
+|--- Commands (can be implemented)
+|       |----- list_job.py
+|       |----- list_scheduled_job.py
+|       |----- runonce.py      
+|       |----- schedule.py
+|       |----- unschedule.py
+|       |----- quit.py
+|       |----- exit.py
+|--- Job Files (can be implemented by user)
+|       |----- jobs-simple.py (Sample job)
+|       |----- other_job.py
+|--- Job Files
+|--- Job Files
+|--- Job Files
+|--- Job Files
+|--- Job Files
+```
